@@ -8,7 +8,7 @@ import { ArrowDown, Search } from 'lucide-react';
 // API functions
 const fetchDoctors = async () => {
   try {
-    const response = await fetch('https://intern-amoi.onrender.com');
+    const response = await fetch('https://intern-amoi.onrender.com/api/doctors');
     if (!response.ok) {
       throw new Error('Failed to fetch doctors');
     }
